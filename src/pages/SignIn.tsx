@@ -41,10 +41,10 @@ const SignIn = () => {
       toast("Error", {
         description: (
           <>
-          {errors.email?.message && <span>{errors.email.message}</span>}
-          {errors.email?.message && errors.password?.message && <br />}
-          {errors.password?.message && <span>{errors.password.message}</span>}
-        </>
+            {errors.email?.message && <span>{errors.email.message}</span>}
+            <br />
+            {errors.password?.message && <span>{errors.password.message}</span>}
+          </>
         ),
         action: {
           label: "OK",
@@ -52,14 +52,14 @@ const SignIn = () => {
         },
       });
     }
-  },[errors.email, errors.password]);
+  }, [errors.email, errors.password]);
 
   const handleErrorOnChange = () => () => {
     clearErrors();
   };
 
   return (
-    <div className="min-h-dvh flex flex-col items-center justify-evenly relative">
+    <div className="min-h-dvh flex flex-col items-center justify-evenly">
       <h1 className="text-7xl">
         <strong>Babi Chat</strong>
       </h1>
