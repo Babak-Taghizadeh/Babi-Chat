@@ -1,12 +1,28 @@
-import { Link } from "react-router-dom"
+import { buttonVariants } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
-        <h1>Homoe Page</h1>
-        <Link className="p-4 bg-slate-500 text-white rounded-lg" to="/chats"></Link>
+    <div className="min-h-dvh flex flex-col justify-center items-center gap-16">
+      <h1 className="text-5xl leading-tight border border-primary rounded-lg p-10">
+        Welcome to <br /> <strong>Babi Chat</strong>
+      </h1>
+      <div className="flex items-center gap-8">
+        <Link
+          className={buttonVariants({ variant: "default", size: "lg" })}
+          to="/sign-in"
+        >
+          Login
+        </Link>
+        <Link
+          className={buttonVariants({ variant: "default", size: "lg" })}
+          to="/sign-up"
+        >
+          Sign Up
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
