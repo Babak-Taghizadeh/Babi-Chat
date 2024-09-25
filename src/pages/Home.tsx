@@ -1,7 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="min-h-dvh flex flex-col justify-center items-center gap-16">
       <h1 className="text-5xl leading-tight border border-primary rounded-lg p-10">
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

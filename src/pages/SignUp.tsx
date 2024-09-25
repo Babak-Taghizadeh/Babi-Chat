@@ -36,7 +36,7 @@ const onSubmit = (data: loginProps) => {
   console.log("Form data", data);
 };
 
-const SignUp = () => {
+const SignUpPage = () => {
   const {
     register,
     handleSubmit,
@@ -142,4 +142,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUpPage;

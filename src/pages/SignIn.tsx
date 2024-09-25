@@ -24,7 +24,7 @@ const onSubmit = (data: loginProps) => {
   console.log("Form data", data);
 };
 
-const SignIn = () => {
+const SignInPage = () => {
   console.log("rendered");
   const {
     register,
@@ -97,4 +97,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignInPage;

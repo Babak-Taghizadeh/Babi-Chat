@@ -1,19 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Chats from './pages/Chats';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
 import { Toaster } from 'sonner';
+import HomePage from './pages/Home';
+import SignInPage from './pages/SignIn';
+import SignUpPage from './pages/SignUp';
+import ChatsPage from './pages/Chats';
+import ContactsPage from './pages/Contacts';
 
 const App = () => {
   return (
     <Router>
       <Toaster />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/chats' element={<Chats />}/>
-        <Route path='/sign-in' element={<SignIn />}/>
-        <Route path='/sign-up' element={<SignUp />}/>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/sign-in' element={<SignInPage />}/>
+        <Route path='/sign-up' element={<SignUpPage />}/>
+        <Route path='/chats' element={<ChatsPage />}/>
+        <Route path='/contacts' element={<ContactsPage />}/>
       </Routes>
     </Router>
   )
