@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="min-h-dvh flex flex-col justify-center items-center gap-16">
+    <div className="min-h-dvh flex flex-col items-center justify-evenly">
       <h1 className="text-5xl leading-tight border border-primary rounded-lg p-10">
         Welcome to <br /> <strong>Babi Chat</strong>
       </h1>

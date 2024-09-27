@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 import { Card, CardImage, CardContent, CardInfo } from "@/components/ui/Card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,7 +7,7 @@ import { PaperPlaneIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
 
 const ChatsPage = () => {
   return (
-    <div className="min-h-dvh pb-20 flex flex-col gap-10 px-5 py-4 overflow-y-auto">
+    <div className="min-h-dvh pb-20 flex flex-col gap-10 px-5 py-6 overflow-y-auto">
       <header className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Chats</h1>
         <Button size="icon"><PaperPlaneIcon /></Button>
@@ -30,7 +30,7 @@ const ChatsPage = () => {
           );
         })}
       </div>
-      <Footer />
+      <Navigation />
     </div>
   );
 };

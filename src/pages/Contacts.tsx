@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 import { Card, CardImage, CardContent } from "@/components/ui/Card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -29,7 +29,7 @@ const ContactsPage = () => {
           );
         })}
       </div>
-      <Footer />
+      <Navigation />
     </div>
   );
 };

@@ -63,7 +63,16 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
   .chats-wrapper > :nth-child(2) {
     @apply border-none; /* Tailwind utilities */
+  }
+
+  .icons-md {
+    color: hsl(var(--primary));
+    width: 1.6rem;
+    height: 1.6rem;
   }
 }
